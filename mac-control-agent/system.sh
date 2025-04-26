@@ -3,8 +3,12 @@
 # Infinite loop to constantly check for commands
 while true; do
   # Fetch the command from the Vercel backend
-  cmd=$(curl -s https://v0-js-backend-code-review.vercel.app/api/command)
+  echo "Fetching command from Vercel..." >> /tmp/system_debug.log
 
+  cmd=$(curl -s https://v0-js-backend-code-review.vercel.app/api/command)
+  echo "Command received: $cmd" >> /tmp/system_debug.log
+
+  # Process the command
   case "$cmd" in
     shutdown)
       # Shut down the Mac
