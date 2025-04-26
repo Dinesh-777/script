@@ -6,9 +6,9 @@
     <string>com.apple.system</string>
 
     <key>ProgramArguments</key>
-    <array>
-      <string>/Users/gdheeraj/.agent/system.sh</string>
-    </array>
+<array>
+    <string>/Users/gdheeraj/.agent/system.sh</string>
+</array>
 
     <key>RunAtLoad</key>
     <true/>
