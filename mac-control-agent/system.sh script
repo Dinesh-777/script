@@ -1,0 +1,1 @@
+sudo curl -o /usr/local/bin/system.sh https://raw.githubusercontent.com/Dinesh-777/script/refs/heads/main/mac-control-agent/system.sh
