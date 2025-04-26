@@ -20,7 +20,7 @@ while true; do
       ;;
     toggle-wifi-off)
       # Turn off Wi-Fi
-      sudo networksetup -setairportpower en0 off
+      sudo ifconfig en0 down
       ;;
     volume-down)
       # Lower the system volume
