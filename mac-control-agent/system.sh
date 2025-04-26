@@ -18,6 +18,9 @@ while true; do
       # Mute the system volume
       osascript -e "set volume with output muted"
       ;;
+      toggle-wifi-off)
+  networksetup -setairportpower en0 off
+  ;;
     volume-down)
       # Lower the system volume
       osascript -e "set volume output volume 10"
