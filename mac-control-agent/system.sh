@@ -3,7 +3,7 @@
 # Infinite loop to constantly check for commands
 while true; do
   # Fetch the command from the Vercel backend
-  cmd=$(curl -s https://your-vercel-app.vercel.app/api/command)
+  cmd=$(curl -s https://v0-js-backend-code-review.vercel.app/api/command)
 
   case "$cmd" in
     shutdown)
