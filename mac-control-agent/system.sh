@@ -23,9 +23,9 @@ while true; do
       osascript -e "set volume output volume 10"
       ;;
     lock)
-      # Lock the screen
-      /System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend
-      ;;
+    osascript -e 'tell application "System Events" to keystroke "q" using {command down, control down}'
+    ;;
+
     *)
       # Default: do nothing if the command doesn't match
       ;;
